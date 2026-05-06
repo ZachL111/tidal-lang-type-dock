@@ -1,0 +1,73 @@
+{
+  "repo": "tidal-lang-type-dock",
+  "language": "Julia",
+  "category": "Compilers",
+  "goal": "Create a Julia reference implementation for type workflows, centered on format conversion, round-trip fixtures, and lossless normalization checks.",
+  "review_model": {
+    "terms": [
+      "IR pressure",
+      "lowering drift",
+      "stack depth",
+      "diagnostic reach"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "IR pressure",
+      "signal": 77,
+      "slack": 35,
+      "drag": 18,
+      "confidence": 63,
+      "score": 198,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "lowering drift",
+      "signal": 73,
+      "slack": 34,
+      "drag": 19,
+      "confidence": 87,
+      "score": 210,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "stack depth",
+      "signal": 80,
+      "slack": 34,
+      "drag": 31,
+      "confidence": 93,
+      "score": 194,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "diagnostic reach",
+      "signal": 84,
+      "slack": 44,
+      "drag": 32,
+      "confidence": 94,
+      "score": 210,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "IR pressure",
+      "signal": 82,
+      "slack": 36,
+      "drag": 31,
+      "confidence": 94,
+      "score": 201,
+      "lane": "ship"
+    }
+  ]
+}
